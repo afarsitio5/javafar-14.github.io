@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<link rel="stylesheet" href="css/estilos.css">	        
+</head>
+<body>
+	<header>
+		<h1>Serie de Fibonacci</h1>
+	</header>
+    <form id="forma" action="javascript:;">
+    	<p>
+        	<label accesskey="P">
+            	Serie de Fibonacci:
+                <input id="base" type="text" name="base">
+                <input id="generar" type="submit" value="Generar" accesskey="G" onclick="operacion()">
+                <input id="limpiar" type="reset" value="limpiar">
+             </label>
+        </p>
+        <p>
+        	<textarea id="resultado" name="resultado" rows="12" cols="30"></textarea>
+        </p>
+    </form>
+    
+    <footer>
+    	Copyright 2020 Andrade Roman Arturo
+    </footer>
+    <script src="js/CtrolFibonacci.js"></script>
+</body>
+</html>
