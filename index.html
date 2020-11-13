@@ -1,30 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Page Title</title>
-<link rel="stylesheet" href="css/estilos.css">	        
+<title>Proveedores</title> 
+<link rel="stylesheet" href="css/estilos.css">
+
 </head>
 <body>
+
 	<header>
-		<h1>Serie de Fibonacci</h1>
+		<h1>Proveedores</h1>
 	</header>
     <form id="forma" action="javascript:;">
     	<p>
         	<label accesskey="P">
-            	Serie de Fibonacci:
-                <input id="base" type="text" name="base">
-                <input id="generar" type="submit" value="Generar" accesskey="G" onclick="operacion()">
+            	Clave:
+                <input id="clave" type="text" name="clave">
+             </label><br><br>
+             <label accesskey="P">
+            	Nombre:
+                <input id="nombre" type="text" name="nombre">
+             </label><br><br>
+              <label accesskey="P">
+            	Telefono:
+                <input id="telefono" type="tel" name="telefono">
+             </label><br><br>
+              <label accesskey="P">
+            	Fecha:
+                <input type="date" id="fecha" name="trip-start"
+       value="2020-07-22"
+       min="2020-01-01" max="2020-11-09" required>
+             </label><br><br>
+             
+                <input id="generar" type="submit" value="Generar" accesskey="G" onclick="provee()">
                 <input id="limpiar" type="reset" value="limpiar">
-             </label>
         </p>
         <p>
-        	<textarea id="resultado" name="resultado" rows="12" cols="30"></textarea>
+        	<output id="resultadoC" name="resultadoC"></output><br>
+            <output id="resultadoN" name="resultadoN"></output><br>
+            <output id="resultadoT" name="resultadoT"></output><br>
+            <output id="resultadoF" name="resultadoF"></output>
         </p>
     </form>
-    
     <footer>
-    	Copyright 2020 Andrade Roman Arturo
+    	Copyright 2020 Andrade Arturo
     </footer>
-    <script src="js/CtrolFibinacci.js"></script>
+    <script src="js/proveedores.js"></script>  
 </body>
 </html>
