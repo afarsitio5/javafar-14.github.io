@@ -5,13 +5,15 @@
 <link rel="stylesheet" href="css/estilos.css">
 
 </head>
-<body>
-
+<body>  
 	<header>
+        
 		<h1>Proveedores</h1>
 	</header>
     <form id="forma" action="javascript:;">
-    	<p>
+    	
+            <fieldset>
+                <legend>Información Personal</legend><br>            
         	<label accesskey="P">
             	Clave:
                 <input id="clave" type="text" name="clave">
@@ -33,17 +35,22 @@
              
                 <input id="generar" type="submit" value="Generar" accesskey="G" onclick="provee()">
                 <input id="limpiar" type="reset" value="limpiar">
-        </p>
-        <p>
+            </fieldset>
+            <br>
+        
+        <fieldset>
         	<output id="resultadoC" name="resultadoC"></output><br>
             <output id="resultadoN" name="resultadoN"></output><br>
             <output id="resultadoT" name="resultadoT"></output><br>
             <output id="resultadoF" name="resultadoF"></output>
-        </p>
+        
+    </fieldset>
     </form>
+
     <footer>
     	Copyright 2020 Andrade Arturo
     </footer>
     <script src="js/proveedores.js"></script>  
+
 </body>
 </html>
