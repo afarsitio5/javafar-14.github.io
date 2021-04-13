@@ -8,7 +8,7 @@
 #define PASS  "12345678"
 #define HUELLA_DIGITAL "798bb177930734ec69314098399b857fc89321e8"
 #define DISPOSITIVO_ID "iot2"
-#define ID_PROYECTO "gilpgiotx"
+#define ID_PROYECTO "afarsitio5-c617a"
 
 // Pin del botón flash.
 const int BOTON_FLASH = 0;
